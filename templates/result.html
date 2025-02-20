@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h2>Available Deals</h2>
+    {% if deals %}
+        <ul>
+            {% for deal in deals %}
+                <li>
+                    <h3>{{ deal.hotel_name }}</h3>
+                    <p>Location: {{ deal.location }}</p>
+                    <p>Price per night: {{ deal.price }}</p>
+                    <p>Rating: {{ deal.rating }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No deals found. Try a different search.</p>
+    {% endif %}
+</div>
+{% endblock content %}

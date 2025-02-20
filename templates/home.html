@@ -1,0 +1,16 @@
+/* home.html */
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="header">
+        <h1>Your Luxury Travel Assistant</h1>
+        <p>Describe your dream destination, dates, and preferences, and let us handle the rest.</p>
+    </div>
+    <form action="/search" method="post">
+        <div class="chat-bar">
+            <input type="text" name="query" placeholder="e.g., 'Luxury escape in Bali, July 2024, near the beach'">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}
