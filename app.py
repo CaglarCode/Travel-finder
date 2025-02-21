@@ -4,7 +4,7 @@ import openai
 app = Flask(__name__)
 
 # OpenAI API anahtarınızı buraya ekleyin
-openai.api_key = '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'
+openai.api_key = 'your api key'
 
 @app.route('/')
 def home():
